@@ -1,0 +1,1 @@
+Effective AI governance begins with mandatory impact registers that citizens can inspect without barriers. Regulators should require companies to document training data provenance and dispute resolution channels before approving deployments. Without transparent ledgers, public trust erodes and lawmakers react only after harms escalate.

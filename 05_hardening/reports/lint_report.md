@@ -1,0 +1,4 @@
+- [x] Stage 5 documents preserve Stage 3 discourse priority string.
+- [x] Stage 1 scope priority is cited where modal/evidence rules are refined.
+- [x] Emotion cloud lexicon remains closed across macro and question rules.
+- [x] Mapping table covers all Stage 4 failure cases and points to existing docs.

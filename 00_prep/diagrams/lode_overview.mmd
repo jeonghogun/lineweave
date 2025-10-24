@@ -1,0 +1,78 @@
+graph LR
+  %% Page current arrow
+  PC["페이지 기류\n(Page Current Flow)"] -->|주 흐름| Ribbon
+
+  subgraph Ribbon["면 리본 축 (-1 ~ 0 ~ +1)"]
+    direction LR
+    Lneg(("-1 정조")) --- Lmid(("0 서술")) --- Lpos(("+1 고조"))
+  end
+
+  subgraph LineSequence[직선 기반 노드 배열]
+    direction LR
+    N1[[명사 노드]] --> O1((모음 연산자)) --> N2[[대명사 노드]]
+    class N1,N2 nounNode;
+    class O1 operator;
+  end
+
+  subgraph ScopeCluster["고리(스코프) 영역"]
+    direction TB
+    RingStart(( )) -. 감싸기 .- RingEnd(( ))
+    RingNote["고리: 국소 의미 범위"]
+  end
+  LineSequence -. 포함 .-> ScopeCluster
+
+  EmotionCloud(((구름\nEmotion Voice)))
+  EmotionCloud -. 톤 조정 .-> LineSequence
+  class EmotionCloud cloud;
+
+  DottedLink1 -. 교차 담화 .-> Capsule
+  DottedLink2 -. 교차 담화 .-> AuxBridge
+
+  Ribbon -->|의미 트랙| SurfaceRail
+  SurfaceRail["형태 레일\n(Surface Rail)"]
+
+  Capsule[["캡슐\n(Idiom/Metaphor)"]]
+  Capsule --- AuxBridge
+  AuxBridge[/보조 다리/]
+  AuxBridge -->|뜻 연결| N2
+
+  CounterIcon{{"반대 기류\n보존"}}
+  CounterIcon -. 역방향 흐름 .-> Ribbon
+
+  PageContext{{"페이지 기류\nContext"}}
+  PageContext --> EmotionCloud
+  PageContext --> ScopeCluster
+
+  LegendStart["범례"]
+
+  subgraph Legend[Legend]
+    direction TB
+    LegLine[[사각형]]:::nounNode
+    LegOperator((원)):::operator
+    LegRing((빈 원)):::ring
+    LegCloud(((구름))):::cloud
+    LegDotted[점선]:::dotted
+    LegRibbon[굵은선]:::ribbon
+    LegCapsule[[겹테두리]]:::capsule
+    LegBridge[/사다리/]:::bridge
+    LegCounter{{육각형}}:::counter
+  end
+
+  classDef nounNode fill:#fef2c0,stroke:#c77f00,stroke-width:2px;
+  classDef operator fill:#fce5cd,stroke:#dd6b20,stroke-width:2px;
+  classDef ring fill:none,stroke:#f97316,stroke-width:2px,stroke-dasharray:4 4;
+  classDef cloud fill:#dbeafe,stroke:#2563eb,stroke-width:2px;
+  classDef dotted stroke-dasharray:3 3,stroke:#64748b;
+  classDef ribbon stroke:#0f766e,stroke-width:4px;
+  classDef capsule fill:#fde68a,stroke:#b45309,stroke-width:3px;
+  classDef bridge fill:#ecfccb,stroke:#4d7c0f,stroke-width:2px;
+  classDef counter fill:#fee2e2,stroke:#dc2626,stroke-width:3px;
+  classDef page fill:#ede9fe,stroke:#7c3aed,stroke-width:2px;
+  classDef surface fill:#f1f5f9,stroke:#334155,stroke-width:2px;
+
+  class SurfaceRail surface;
+  class RingStart,RingEnd ring;
+  class PageContext page;
+  class CounterIcon counter;
+  class Ribbon ribbon;
+  class LegendStart dotted;

@@ -1,0 +1,13 @@
+failure_id,failure_title,source_section,patch_doc,patch_section,rationale
+1,Result vs elaboration tie,../../04_main_eval/reports/failure_cases.md#L5,changes/discourse_tie_breakers.md,1-result-vs-elaboration-lexical-cues,Lexical cues ensure result dominates elaboration when causal predicates appear.
+2,Modal priority conflict,../../04_main_eval/reports/failure_cases.md#L8,changes/causal_modal_edge_cases.md,2-deontic-vs-causal-branch,Decision tree adds deontic-causal branch matching Stage 3 order.
+3,Counter-current omission,../../04_main_eval/reports/failure_cases.md#L11,changes/counter_current_strength.md,2-soft-flag-retention-checklist,Checklist forces adversative markers to retain soft strength flags.
+4,Evidence snippet granularity,../../04_main_eval/reports/failure_cases.md#L14,changes/evidence_span_guidelines.md,1-clause-granularity,Clause-level quoting and scope references documented.
+5,Question typing drift,../../04_main_eval/reports/failure_cases.md#L17,changes/question_quote_rules.md,1-question-led-transitions,Question-shaped transitions routed to shift/transition logic.
+6,Emotion cloud neutrality,../../04_main_eval/reports/failure_cases.md#L20,changes/question_quote_rules.md,2-emotion-cloud-defaults,Hedging defaults pin neutral tone to calm vs concern cues.
+7,Scope span clipping,../../04_main_eval/reports/failure_cases.md#L23,changes/question_quote_rules.md,3-quote-boundary-scope,Scope rule locks quotation marks inside span definition.
+8,Counter-current strength gap,../../04_main_eval/reports/failure_cases.md#L26,changes/counter_current_strength.md,1-strength-layers,Soft/strong tiers defined with retention duties.
+9,Dialogue chain depth,../../04_main_eval/reports/failure_cases.md#L29,changes/dialog_chain_notes.md,1-chain-linking,Chain IDs and ordered notes formalized for multi-turn links.
+10,Ribbon neutrality bias,../../04_main_eval/reports/failure_cases.md#L32,changes/dialog_chain_notes.md,2-ribbon-micro-scale,Ribbon micro-scale encourages ±0.25 adjustments for persuasion swings.
+11,Relation blending because-clause,../../04_main_eval/reports/failure_cases.md#L35,changes/discourse_tie_breakers.md,2-because-dominance,Because clauses mandated to resolve toward cause/result tags.
+12,Surface rail note fatigue,../../04_main_eval/reports/failure_cases.md#L38,changes/surface_rail_macros.md,2-macro-prompt-structure,Macro template reduces manual note fatigue while keeping audit trail.
